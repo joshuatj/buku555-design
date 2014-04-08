@@ -8,7 +8,7 @@
     <meta name="author" content="">
    
 
-    <title>buku555 - Split Bill</title>
+    <title>buku555 - Record Payment</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,8 +43,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-			<li class="active"><a href="splitbill.html">Split Bill</a></li>
-			<li><a href="recordpayment.html">Record Payment</a></li>
+			<li><a href="splitbill.html">Split Bill</a></li>
+			<li class="active"><a href="recordpayment.html">Record Payment</a></li>
             <li><a href="#history">History</a></li>
             
           </ul>
@@ -58,12 +58,24 @@
         <h1>buku 555 - lending made social</h1>
         <p class="lead">Split a bill with friends</p>
 		
-		<div class="action-form">
+		<div class="record-payment">
 			
 			<div id='splitBillrow' class="pin-tab-upper rounded-corners">
-			<span class="font-14">I paid </span><input id='totalAmount'> 
-			<span class="font-14">For</span> 
-			<input class="w230" id='reason'> 
+			<input id='totalAmount' placeholder="Friend"> 
+			<select name="type" class="dropdown-toggle">
+				<option value="0">I owe</option>
+				<option value="1" selected="selected">owes me</option>
+				<option value="2">I paid</option>
+				<option value="3">paid me</option>
+			</select>
+			<select name="type" class="dropdown-toggle">
+				<option value="MYR">MYR</option>
+				<option value="S$" selected="selected">S$</option>
+				<option value="USD">USD</option>
+				<option value="GBP">GBP</option>
+			</select>
+			<input placeholder="How much?"> 
+			<input placeholder="For what? (e.g. nasi lemak)">
 			<a type="button" id='splitButton' class="btn split-bill">Cancel</a>
 			
 			
@@ -74,11 +86,12 @@
 			<tbody>
 			<tr>
 				<td>Joshua Ng (me)</td>
-				<td>$15.00</td>
+				<td>owes</td>
+				<td>Gary Kuen</td>
 			</tr>			
 			</tbody>
 			</table>
-			<div class="mb-20"><input class="max-width" type="email" placeholder="Friend's name or enter e-mail address - press enter to add"></div>
+			
 			<table class="table table-no-border">
 			<tbody>
 				<tr>
