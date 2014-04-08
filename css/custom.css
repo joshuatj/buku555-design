@@ -11,6 +11,10 @@ body {
  width: 230px;
 }
 
+.mb-20{
+margin-bottom: 20px;
+}
+
 .font-14 {
     font-size: 14px;
 }
@@ -89,4 +93,8 @@ cursor: pointer;
 font-size: 16px;
 background: #F09050;
 text-align: center;
+}
+
+.max-width{
+width: 93%;
 }
