@@ -1,4 +1,5 @@
 buku555-design
 ==============
 
-design sandbox for buku555
+Design sandbox for buku555
+Mockup at http://joshuatj.github.io/buku555-design/ 
